@@ -2,10 +2,25 @@
   "name": "arm",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "watch": "npm run watch:ts & npm run watch:jsx & wait",
+    "watch:ts": "tsc -w",
+    "watch:jsx": "gulp watch:jsx"
   },
   "dependencies": {
+    "@angular/common": "^4.3.2",
+    "@angular/compiler": "^4.3.2",
+    "@angular/core": "^4.3.2",
+    "@angular/platform-browser": "^4.3.2",
+    "@angular/platform-browser-dynamic": "^4.3.2",
     "babel-runtime": "^6.20.0",
-    "meteor-node-stubs": "~0.2.4"
+    "meteor-node-stubs": "~0.2.4",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.16"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jsx-html": "0.0.3",
+    "gulp-rename": "^1.2.2"
   }
 }
