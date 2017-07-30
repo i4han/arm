@@ -20,7 +20,7 @@ gulp.task('cp:js', () => {
 
     }    )
 
-gulp.task('watch', function () {
+gulp.task('watch', ['jsx-html', 'cp:js'], function () {
     gulp.watch( source + '/**/*.js',  ['cp:js'])
     gulp.watch( source + '/**/*.jsx', ['jsx-html'])
 })

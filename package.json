@@ -4,8 +4,8 @@
   "scripts": {
     "start": "meteor run",
     "watch": "tsc -w",
-    "clean:client": "rm -rf ./client",
-    "clean:jsx": "rm -rf ./jsx",
+    "clean:client": "rm -rf ./client/*",
+    "clean:jsx": "rm -rf ./jsx/*",
     "clean": "npm run clean:client & npm run clean:jsx"
   },
   "dependencies": {
